@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Google CSE Admin feature.
+ */
+
+include_once 'cu_google_cse_admin_bundle.features.inc';
