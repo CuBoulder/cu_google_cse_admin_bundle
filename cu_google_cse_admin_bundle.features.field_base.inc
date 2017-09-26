@@ -46,7 +46,7 @@ function cu_google_cse_admin_bundle_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
-      'max_length' => 255,
+      'max_length' => 11,
     ),
     'translatable' => 0,
     'type' => 'text',
