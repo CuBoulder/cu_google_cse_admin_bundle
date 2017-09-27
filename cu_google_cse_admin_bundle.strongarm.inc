@@ -13,19 +13,43 @@ function cu_google_cse_admin_bundle_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_node_cu_google_cse';
+  $strongarm->value = '1';
+  $export['auto_entitylabel_node_cu_google_cse'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_pattern_node_cu_google_cse';
+  $strongarm->value = 'Colorado.edu/[node:field-cu-google-cse-path]';
+  $export['auto_entitylabel_pattern_node_cu_google_cse'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_php_node_cu_google_cse';
+  $strongarm->value = '';
+  $export['auto_entitylabel_php_node_cu_google_cse'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__cu_google_cse';
   $strongarm->value = array(
     'view_modes' => array(),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '30',
+          'weight' => '2',
         ),
         'redirect' => array(
-          'weight' => '30',
+          'weight' => '3',
+        ),
+        'metatags' => array(
+          'weight' => '6',
         ),
       ),
       'display' => array(),
