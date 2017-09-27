@@ -7,7 +7,7 @@
 //to debug, comment out the text/xml header and enable the print_r.
 // dsm() does NOT work at this level
 header("Content-type: text/xml");
-drupal_add_http_header('Content-Disposition', 'attachment; filename =' . $node->field_cu_google_cse_path['und'][0]['value'] . '.xml');
+drupal_add_http_header('Content-Disposition', 'attachment; filename =' . $node->title . '.xml');
 
 
 //print '<pre>';
@@ -24,7 +24,7 @@ drupal_add_http_header('Content-Disposition', 'attachment; filename =' . $node->
 ?>
 <?xml version="1.0" encoding="UTF-8" ?>
   <CustomSearchEngine id="<?php print $node->field_cu_google_cse_id['und'][0]['value']?>" creator="<?php print $node->field_cu_google_cse_creator['und'][0]['value']?>" language="en" encoding="UTF-8" enable_suggest="true">
-    <Title><?php print $node->field_cu_google_cse_path['und'][0]['value']?></Title>
+    <Title><?php print $node->title?></Title>
     <Context>
       <BackgroundLabels>
         <Label name="_cse_<?php print $node->field_cu_google_cse_id['und'][0]['value']?>" mode="FILTER" />

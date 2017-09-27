@@ -109,11 +109,7 @@ function cu_google_cse_admin_bundle_field_default_field_instances() {
   // Exported field_instance: 'node-cu_google_cse-field_cu_google_cse_path'.
   $field_instances['node-cu_google_cse-field_cu_google_cse_path'] = array(
     'bundle' => 'cu_google_cse',
-    'default_value' => array(
-      0 => array(
-        'value' => 'Colorado.edu/',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
