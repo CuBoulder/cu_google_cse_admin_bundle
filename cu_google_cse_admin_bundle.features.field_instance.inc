@@ -149,7 +149,7 @@ function cu_google_cse_admin_bundle_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'size' => 15,
       ),
       'type' => 'text_textfield',
       'weight' => 1,
