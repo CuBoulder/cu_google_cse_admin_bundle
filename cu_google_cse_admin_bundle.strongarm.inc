@@ -21,7 +21,7 @@ function cu_google_cse_admin_bundle_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_entitylabel_pattern_node_cu_google_cse';
-  $strongarm->value = 'Colorado.edu/[node:field-cu-google-cse-path]';
+  $strongarm->value = '[node:field-cu-google-cse-path]';
   $export['auto_entitylabel_pattern_node_cu_google_cse'] = $strongarm;
 
   $strongarm = new stdClass();
